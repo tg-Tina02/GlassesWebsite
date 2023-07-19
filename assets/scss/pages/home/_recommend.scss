@@ -1,16 +1,33 @@
 .recommend{
     padding: $Area-padding;
+    @include iphone(){
+        padding: $Area-padding-sm;
+      }
     h2{
         margin-bottom: $marginB-48;
+        @include iphone(){
+            margin-bottom: $marginB-24;
+          }
     }
 
     .card-group{
         display: flex;
         justify-content: space-between;
         gap: 24px;
+
+        @include ipad(){
+            flex-wrap: wrap;
+          }
+        @include iphone(){
+            flex-direction: column;
+            align-items: center;
+          }
     }
     .card{
         max-width: 306px;
+        @include ipad(){
+            max-width: 336px;
+          }
 
         border: 1px solid #DEE2E6;
         border-radius: 4px;

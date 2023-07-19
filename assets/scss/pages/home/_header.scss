@@ -1,5 +1,8 @@
 header{
     height: 787px;
+    @include iphone(){
+        height: 396px;
+      }
 
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
     background-size: cover;
@@ -15,10 +18,20 @@ header{
     }
     p{
         @include font-style(#650300,36px,54px,400);
+        @include iphone(){
+            font-size: 16px;
+            line-height: 24px;
+          }
     }
 }
 .header-title{
     @include font-style($Red-dark,64px,96px,600);
+
+    @include iphone(){
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 8px;
+      }
 }
 .header-btn{
     background: $Red-light;

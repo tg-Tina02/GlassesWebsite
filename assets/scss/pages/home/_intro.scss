@@ -1,6 +1,9 @@
 .intro{
     background-color: $Pink;
     padding: $Area-padding;
+    @include iphone(){
+        padding: $Area-padding-sm;
+      }
 }
 .intro-list{
     margin-top: 32px;
@@ -8,6 +11,10 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+
+    @include ipad(){
+        flex-wrap: wrap;
+      }
 
     h3{
         @include font-style($Red-dark,24px,36px,600);
@@ -17,6 +24,12 @@
     }
     li{
         max-width: 306px;
+        @include ipad(){
+            max-width: 336px;
+          }
+        @include iphone(){
+            width: 100%;
+          }
     }
     img{
         display: block;

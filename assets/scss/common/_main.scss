@@ -6,6 +6,7 @@
 
 body{
     @include font-style(#000,16px,1.5,400);
+    font-family: Arial, sans-serif;
 }
 a{
     text-decoration: none;
@@ -17,10 +18,20 @@ img{
 .container{
     max-width: 1296px;
     margin: 0 auto;
-    // background: green;
-    // outline: 1px solid blue
+
+    @include ipad(){
+        padding: 0 36px;
+      }
+    @include iphone(){
+        padding: 0 14px;
+      }
 }
 h2{
     @include font-style($Red-dark,48px,72px,600);
     text-align: center;
+
+    @include iphone(){
+        font-size: 24px;
+        line-height: 36px;
+      }
 }

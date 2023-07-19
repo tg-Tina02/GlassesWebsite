@@ -1,5 +1,8 @@
 .design{
     padding: $Area-padding;
+    @include iphone(){
+        padding: $Area-padding-sm;
+      }
 
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
     background-size: cover;
@@ -9,9 +12,16 @@
     h2{
         margin-bottom: $marginB-48;
         color: #fff;
+        @include iphone(){
+            margin-bottom: $marginB-24;
+          }
     }
     ul{
         display: flex;
+        @include ipad(){
+            flex-direction: column;
+            gap: 24px;
+          }
     }
     img{
         width: 100%;

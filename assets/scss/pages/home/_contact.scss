@@ -1,13 +1,26 @@
 .contact{
     padding: $Area-padding;
     background: $Pink;
+    @include iphone(){
+        padding: $Area-padding-sm;
+      }
 }
 .contact-list{
     max-width: 636px;
     margin: 0 auto;
 
+    @include ipad(){
+        max-width: 576px;
+      }
+      @include iphone(){
+        padding: 0 14px;
+      }
+
     h2{
         margin-bottom: $marginB-48;
+        @include iphone(){
+            margin-bottom: $marginB-24;
+          }
     }
     p{
         font-size: 20px;
@@ -29,6 +42,13 @@
         background: none;
         border: 1px solid #000;
     }
+    label{
+        display: flex;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
     input[type=checkbox] {
         display: inline-block;
         width: 20px;
@@ -49,5 +69,11 @@
         &:hover{
             cursor: pointer;
         }
+
+        @include iphone(){
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+          }
     }
 }

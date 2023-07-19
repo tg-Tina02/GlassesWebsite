@@ -1,9 +1,17 @@
 nav{
     background: #aa0601;
     padding: 16px 0;
+    @include iphone(){
+        padding: 0;
+      }
     .container{
         display: flex;
         justify-content: space-between;
+
+        @include iphone(){
+            flex-wrap: wrap;
+            padding: 0;
+          }
     }
 }
 .glasses-logo{
@@ -20,6 +28,9 @@ nav{
         position: relative;
         left: 101%;
     }
+    @include iphone(){
+        margin: 16px 15px;
+      }
 }
 .nav-list{
     display: flex;
@@ -29,4 +40,20 @@ nav{
 
     @include font-style(#fff,20px,30px,400);
 
+    @include iphone(){
+        font-size: 16px;
+        line-height: 24px;
+        flex-wrap: wrap;
+        gap: 0;
+        width: 100%;
+        text-align: center;
+        li{
+            width: 50%;
+            border: 1px solid #fff;
+        }
+        a{
+            display: block;
+            padding: 12px 0;
+        }
+      }
 }
