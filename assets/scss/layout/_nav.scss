@@ -1,0 +1,32 @@
+nav{
+    background: #aa0601;
+    padding: 16px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.glasses-logo{
+    display: block;
+    width: 80px;
+    height: 48.75px;
+    padding: 12px 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    h1{
+        position: relative;
+        left: 101%;
+    }
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+
+    @include font-style(#fff,20px,30px,400);
+
+}

@@ -1,0 +1,26 @@
+.intro{
+    background-color: $Pink;
+    padding: $Area-padding;
+}
+.intro-list{
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    h3{
+        @include font-style($Red-dark,24px,36px,600);
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+    li{
+        max-width: 306px;
+    }
+    img{
+        display: block;
+        width: 83.33px;
+        margin: auto;
+    }
+}

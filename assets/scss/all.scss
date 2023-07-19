@@ -1,5 +1,16 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
 
+@import "./common/normalize-css-reset";
+@import "./common/variable";
+@import "./common/mixins";
+@import "./common/main";
 
-@import './pages/index.scss';
+@import "./layout/nav";
+@import "./layout/footer";
+
+// home
+@import "./pages/home/header";
+@import "./pages/home/intro";
+@import "./pages/home/series";
+@import "./pages/home/design";
+@import "./pages/home/recommend";
+@import "./pages/home/contact";

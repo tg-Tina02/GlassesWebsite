@@ -1,0 +1,27 @@
+.design{
+    padding: $Area-padding;
+
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h2{
+        margin-bottom: $marginB-48;
+        color: #fff;
+    }
+    ul{
+        display: flex;
+    }
+    img{
+        width: 100%;
+    }
+    h3{
+        @include font-style($Red-light,48px,72px,900);
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        padding: 8px 0;
+        background-color: #fff;
+        border-right: 1px solid #00000029;
+    }
+}

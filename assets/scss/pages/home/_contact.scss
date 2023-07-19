@@ -1,0 +1,53 @@
+.contact{
+    padding: $Area-padding;
+    background: $Pink;
+}
+.contact-list{
+    max-width: 636px;
+    margin: 0 auto;
+
+    h2{
+        margin-bottom: $marginB-48;
+    }
+    p{
+        font-size: 20px;
+    }
+    form{
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    span{
+        display: block;
+        margin-bottom: 8px;
+    }
+    input:not(.checkbox),textarea{
+        display: inline-block;
+        width: 100%;
+        padding: 6px 12px;
+        margin-bottom: 16px;
+        background: none;
+        border: 1px solid #000;
+    }
+    input[type=checkbox] {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+        margin-bottom: $marginB-48;
+        cursor: pointer;
+    }
+    button{
+        display: block;
+        text-align: center;
+        background: $Red-light;
+        color: #fff;
+        border: none;
+        padding: 16px 176px;
+        margin: 0 auto;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

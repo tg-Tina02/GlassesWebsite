@@ -1,0 +1,28 @@
+header{
+    height: 787px;
+
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    p{
+        @include font-style(#650300,36px,54px,400);
+    }
+}
+.header-title{
+    @include font-style($Red-dark,64px,96px,600);
+}
+.header-btn{
+    background: $Red-light;
+    @include font-style(#fff,20px,30px,400);
+    padding: 6px 12px;
+    display: inline-block;
+}
