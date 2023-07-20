@@ -29,6 +29,7 @@
     h3{
         @include font-style($Red-light,48px,72px,900);
         font-family: 'Roboto', sans-serif;
+        font-style: italic;
         text-align: center;
         padding: 8px 0;
         background-color: #fff;

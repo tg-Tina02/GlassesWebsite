@@ -1,0 +1,132 @@
+.product{
+    padding: $Area-padding;
+    @include iphone(){
+        padding: $Area-padding-sm;
+    }
+    h2{
+        font-size: 42px;
+        font-weight: 500;
+        color: #000;
+        @include iphone(){
+            font-size: 24px;
+        }
+    }
+    h3{
+        font-size: 32px;
+        text-align: center;
+        @include iphone(){
+            font-size: 24px;
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .product-list{
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+        @include iphone(){
+            margin-top:24px;
+            flex-direction: column;
+        }
+        li{
+            margin-bottom: calc(80px - 24px);
+            @include ipad(){
+                margin-bottom: calc(40px - 24px);
+            }
+            @include iphone(){
+                margin-bottom: 0;
+            }
+        }
+    }
+    .page1 li{
+        width: calc((100% - 72px)/4);
+        @include ipad(){
+            width: calc((100% - 24px)/2);
+        }
+        @include iphone(){
+            width: 100%;
+        }
+    }
+    .page2 li{
+        width: calc((100% - 48px)/3);
+        @include ipad(){
+            width: calc((100% - 24px)/2);
+        }
+        @include iphone(){
+            width: 100%;
+        }
+    }
+    .text{
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        .price{
+            font-weight: 500;
+            color: $Red-light;
+            &::before{
+                content: "NTD";
+            }
+        }
+    }
+    .color{
+        display: flex;
+        gap: 8px;
+        div{
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+        }
+    }
+    .color-1{
+        background: #5F3E2D;
+    }
+    .color-2{
+        background: #B75929;
+    }
+
+    .pagination{
+        display: flex;
+        font-size: 18px;
+        color: #555555;
+        text-align: center;
+        width: fit-content;
+        
+        margin: 24px auto 0;
+        @include ipad(){
+            margin-top: calc(80px - 24px);
+        }
+        @include iphone(){
+            font-size: 16px;
+        }
+
+        // 邊框
+        border: 1px solid #555555;
+        li:not(:last-child){
+            border-right: 1px solid #555555;
+        }
+        // 上下頁按鈕
+        li:first-of-type,li:last-of-type{
+            a{
+                font-size: 19px;
+                padding: 10px 11px;
+                @include iphone(){
+                    font-size: 16px;
+                }
+            }
+        }
+        a{
+            display: block;
+            padding: 11px 15px;
+            &:hover{
+                background: #F2F2F2;
+            }
+        }
+        .active{
+            background: #000;
+            color: #fff;
+        }
+    }
+}

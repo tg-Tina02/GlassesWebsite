@@ -1,0 +1,37 @@
+.banner{
+    display: flex;
+    .pic{
+        width: 50%;
+        height: 296px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include iphone(){
+            height: 136px;
+        }
+    }
+    .pic1{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+        @include ipad(){
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+        }
+    }
+    .pic2{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+        @include ipad(){
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+        }
+    }
+    .pic3{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+        @include ipad(){
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+        }
+    }
+    .pic4{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+        @include ipad(){
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+        }
+    }
+}
