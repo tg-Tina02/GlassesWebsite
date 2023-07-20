@@ -24,9 +24,11 @@
           }
     }
     .card{
-        max-width: 306px;
         @include ipad(){
-            max-width: 336px;
+            width: calc(50% - 12px);
+          }
+        @include iphone(){
+            width: 100%;
           }
 
         border: 1px solid #DEE2E6;
