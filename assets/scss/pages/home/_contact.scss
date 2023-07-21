@@ -1,38 +1,37 @@
 .contact{
-    padding: $Area-padding;
+    padding: $Padding-80 0;
     background: $Pink;
-    @include iphone(){
-        padding: $Area-padding-sm;
+    @include Mobile(){
+        padding: $Padding-40;
       }
 }
 .contact-list{
     max-width: 636px;
     margin: 0 auto;
 
-    @include ipad(){
+    @include Pad(){
         max-width: 576px;
       }
-      @include iphone(){
+    @include Mobile(){
         padding: 0 14px;
       }
 
     h2{
-        margin-bottom: $marginB-48;
-        @include iphone(){
-            margin-bottom: $marginB-24;
+        margin-bottom: $gap-48;
+        @include Mobile(){
+            margin-bottom: $gap-24;
           }
     }
     p{
         font-size: 20px;
     }
     form{
-        margin-top: 24px;
+        margin-top: $gap-24;
         font-size: 16px;
-        line-height: 24px;
     }
     span{
         display: block;
-        margin-bottom: 8px;
+        margin-bottom: $gap-8;
     }
     input:not(.checkbox),textarea{
         display: inline-block;
@@ -46,7 +45,6 @@
         display: flex;
         p{
             font-size: 16px;
-            line-height: 24px;
         }
     }
     input[type=checkbox] {
@@ -54,7 +52,7 @@
         width: 20px;
         height: 20px;
         margin-right: 6px;
-        margin-bottom: $marginB-48;
+        margin-bottom: $gap-48;
         cursor: pointer;
     }
     button{
@@ -70,7 +68,7 @@
             cursor: pointer;
         }
 
-        @include iphone(){
+        @include Mobile(){
             width: 100%;
             padding-left: 0;
             padding-right: 0;

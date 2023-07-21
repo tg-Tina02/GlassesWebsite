@@ -1,24 +1,13 @@
 
-@mixin font-style($font-color:#000,$fsz:16px,$line-height:1.5,$fw:400) {
-    color: $font-color;
-    font-size: $fsz;
-    line-height: $line-height;
-    font-weight:$fw;
-};
 
-@mixin ipad-air{
-    @media (max-width:820px){
-        @content
-    }
-};
-@mixin ipad{
-    @media (max-width:768px){
+@mixin Pad{
+    @media (max-width:992px){
         @content
     }
 };
 
-@mixin iphone{
-    @media (max-width:575px){
+@mixin Mobile{
+    @media (max-width:767px){
         @content
     }
 };

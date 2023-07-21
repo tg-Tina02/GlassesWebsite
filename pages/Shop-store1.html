@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlassesWebsite</title>
+</head>
+
+<body>
+  <%- include('./layout/nav'); -%>
+
+    <div class="Shop">
+        <div class="container">
+            <h2>門市據點</h2>
+            <div class="section">
+                選擇分店
+                <select>
+                    <option>台北中山旗艦店</option>
+                    <option>台中市</option>
+                    <option>高雄市</option>
+                </select>
+            </div>
+            <ul class="store1">
+                <li class="store">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true" alt="店鋪1">
+                    <div class="text">
+                        <h3 class="shop-name">台北中山旗艦店</h3>
+                        <ul class="info">
+                            <li>電話：(02)000-1234</li>
+                            <li>營業時間：10:00-21:00</li>
+                            <li>地址：台北市中山區南京東路25巷2-1號</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14457.742367843079!2d121.52150864493979!3d25.05322128381926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6LevMjXlt7cyLTHomZ8!5e0!3m2!1szh-TW!2stw!4v1689930470618!5m2!1szh-TW!2stw" width="746" height="414" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

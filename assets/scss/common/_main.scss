@@ -1,17 +1,13 @@
+// 字體
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro+Titling&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*,*::after,*::before{
-    // box-sizing: border-box;
-}
-/* 全域都設 border-box */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
+// 頁尾的icon
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0);
 
 body{
-    @include font-style(#000,16px,1.5,400);
-    // font-family: Arial, sans-serif;
+    line-height: 1.5;
     font-family: sans-serif;
+    // font-family: Arial, sans-serif;
 }
 a{
     text-decoration: none;
@@ -24,19 +20,20 @@ img{
     max-width: 1296px;
     margin: 0 auto;
 
-    @include ipad(){
+    @include Pad(){
         padding: 0 36px;
       }
-    @include iphone(){
+    @include Mobile(){
         padding: 0 14px;
       }
 }
 h2{
-    @include font-style($Red-dark,48px,72px,600);
+    font-size: 48px;
+    font-weight: 600;
+    color: $Red-dark;
     text-align: center;
 
-    @include iphone(){
+    @include Mobile(){
         font-size: 24px;
-        line-height: 36px;
       }
 }

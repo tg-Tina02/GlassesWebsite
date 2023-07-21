@@ -1,5 +1,5 @@
 
-@import "./common/normalize-css-reset";
+@import "./common/css-reset";
 @import "./common/variable";
 @import "./common/mixins";
 @import "./common/main";
@@ -19,3 +19,6 @@
 @import "./pages/Series/series-nav";
 @import "./pages/Series/banner";
 @import "./pages/Series/product";
+
+//Shop
+@import "./pages/Shop/shop";

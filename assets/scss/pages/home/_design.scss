@@ -1,7 +1,7 @@
 .design{
-    padding: $Area-padding;
-    @include iphone(){
-        padding: $Area-padding-sm;
+    padding: $Padding-80 0;
+    @include Mobile(){
+        padding: $Padding-40 0;
       }
 
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
@@ -10,24 +10,23 @@
     background-position: center;
 
     h2{
-        margin-bottom: $marginB-48;
+        margin-bottom: $gap-48;
         color: #fff;
-        @include iphone(){
-            margin-bottom: $marginB-24;
+        @include Mobile(){
+            margin-bottom: $gap-24;
           }
     }
     ul{
         display: flex;
-        @include ipad(){
+        @include Pad(){
             flex-direction: column;
-            gap: 24px;
+            gap: $gap-24;
           }
     }
-    img{
-        width: 100%;
-    }
     h3{
-        @include font-style($Red-light,48px,72px,900);
+        font-size: 48px;
+        font-weight: 900;
+        color: $Red-light;
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         text-align: center;

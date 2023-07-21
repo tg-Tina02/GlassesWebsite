@@ -1,6 +1,6 @@
 header{
     height: 787px;
-    @include iphone(){
+    @include Mobile(){
         height: 396px;
       }
 
@@ -17,25 +17,28 @@ header{
         align-items: flex-end;
     }
     p{
-        @include font-style(#650300,36px,54px,400);
-        @include iphone(){
+        font-size: 36px;
+        color: $Red-dark;
+
+        @include Mobile(){
             font-size: 16px;
-            line-height: 24px;
           }
     }
 }
 .header-title{
-    @include font-style($Red-dark,64px,96px,600);
+    color: $Red-dark;
+    font-size: 64px;
+    font-weight: 600;
 
-    @include iphone(){
+    @include Mobile(){
         font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 8px;
+        margin-bottom: $gap-8;
       }
 }
 .header-btn{
-    background: $Red-light;
-    @include font-style(#fff,20px,30px,400);
+    color: #fff;
+    font-size: 20px;
     padding: 6px 12px;
     display: inline-block;
+    background: $Red-light;
 }

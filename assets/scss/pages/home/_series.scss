@@ -1,23 +1,23 @@
 .series{
-    padding: $Area-padding;
-    @include iphone(){
-        padding: $Area-padding-sm;
+    padding: $Padding-80 0;
+    @include Mobile(){
+        padding: $Padding-40 0;
       }
     h2{
-        margin-bottom: $marginB-48;
-        @include iphone(){
-            margin-bottom: $marginB-24;
+        margin-bottom: $gap-48;
+        @include Mobile(){
+            margin-bottom: $gap-24;
           }
     }
     ul{
         display: flex;
         justify-content: space-between;
-        gap: 24px;
+        gap: $gap-24;
 
         li{
-            max-width: calc((100% - 48px)/3);
+            max-width: calc((100% - $gap-24*2)/3);
         }
-        @include ipad(){
+        @include Pad(){
             flex-direction: column;
             align-items: center;
             li{
@@ -26,11 +26,12 @@
           }
     }
     img{
-        width: 100%;
-        margin-bottom: 8px;
+        margin-bottom: $gap-8;
     }
     h3{
-        @include font-style($Red-light,48px,72px,900);
+        font-size: 48px;
+        font-weight: 900;
+        color: $Red-light;
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         text-align: center;

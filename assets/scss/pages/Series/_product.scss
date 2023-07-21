@@ -1,61 +1,60 @@
 .product{
-    padding: $Area-padding;
-    @include iphone(){
-        padding: $Area-padding-sm;
+    padding: $Padding-80 0;
+    @include Mobile(){
+        padding: $Padding-40 0;
     }
     h2{
         font-size: 42px;
         font-weight: 500;
         color: #000;
-        @include iphone(){
+
+        @include Mobile(){
             font-size: 24px;
         }
     }
     h3{
         font-size: 32px;
         text-align: center;
-        @include iphone(){
+
+        @include Mobile(){
             font-size: 24px;
         }
-    }
-    img{
-        width: 100%;
     }
     .product-list{
         margin-top: 32px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 24px;
-        @include iphone(){
-            margin-top:24px;
+        gap: $gap-24;
+        @include Mobile(){
+            margin-top:$gap-24;
             flex-direction: column;
         }
         li{
-            margin-bottom: calc(80px - 24px);
-            @include ipad(){
-                margin-bottom: calc(40px - 24px);
+            margin-bottom: calc(80px - $gap-24);
+            @include Pad(){
+                margin-bottom: calc(40px - $gap-24);
             }
-            @include iphone(){
+            @include Mobile(){
                 margin-bottom: 0;
             }
         }
     }
     .page1 li{
-        width: calc((100% - 72px)/4);
-        @include ipad(){
-            width: calc((100% - 24px)/2);
+        width: calc((100% - $gap-24*3)/4);
+        @include Pad(){
+            width: calc((100% - $gap-24)/2);
         }
-        @include iphone(){
+        @include Mobile(){
             width: 100%;
         }
     }
     .page2 li{
-        width: calc((100% - 48px)/3);
-        @include ipad(){
-            width: calc((100% - 24px)/2);
+        width: calc((100% - $gap-24*2)/3);
+        @include Pad(){
+            width: calc((100% - $gap-24)/2);
         }
-        @include iphone(){
+        @include Mobile(){
             width: 100%;
         }
     }
@@ -73,7 +72,7 @@
     }
     .color{
         display: flex;
-        gap: 8px;
+        gap: $gap-8;
         div{
             width: 24px;
             height: 24px;
@@ -94,11 +93,11 @@
         text-align: center;
         width: fit-content;
         
-        margin: 24px auto 0;
-        @include ipad(){
-            margin-top: calc(80px - 24px);
+        margin: $gap-24 auto 0;
+        @include Pad(){
+            margin-top: calc(80px - $gap-24);
         }
-        @include iphone(){
+        @include Mobile(){
             font-size: 16px;
         }
 
@@ -112,7 +111,7 @@
             a{
                 font-size: 19px;
                 padding: 10px 11px;
-                @include iphone(){
+                @include Mobile(){
                     font-size: 16px;
                 }
             }
