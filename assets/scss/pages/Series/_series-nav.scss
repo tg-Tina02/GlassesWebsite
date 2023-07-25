@@ -10,26 +10,21 @@
     }
     @include Mobile(){
         font-size: 16px;
-        .container{
-            padding: 0;
-        }
-    }
-    ul{
-        display: flex;
     }
     li{
         flex-grow: 1;
         border: 1px solid #DCDCDC;
         position: relative;
-    }
-    .active::after{
-        content: "";
-            position: absolute;
-            background: $Red-light;
-            height: 8px;
-            bottom: 0;
-            left: 0;
-            right: 0;
+
+        &.active::after{
+            content: "";
+                position: absolute;
+                background: $Red-light;
+                height: 8px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+        }
     }
     a{
         display: block;

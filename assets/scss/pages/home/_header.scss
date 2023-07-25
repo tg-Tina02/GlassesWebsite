@@ -1,4 +1,4 @@
-header{
+.index-header{
     height: 787px;
     @include Mobile(){
         height: 396px;
@@ -28,12 +28,12 @@ header{
 .header-title{
     color: $Red-dark;
     font-size: 64px;
-    font-weight: 600;
-
+    font-weight: 700;
     @include Mobile(){
         font-size: 24px;
         margin-bottom: $gap-8;
-      }
+    }
+    margin-bottom: 4px;
 }
 .header-btn{
     color: #fff;

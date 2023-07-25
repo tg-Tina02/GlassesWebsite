@@ -3,24 +3,19 @@
     @include Mobile(){
         padding: $Padding-40 0;
       }
-    h2{
-        margin-bottom: $gap-48;
-        @include Mobile(){
-            margin-bottom: $gap-24;
-          }
-    }
 
     .card-group{
+        margin-top: $gap-48;
+        @include Mobile(){
+            margin-top: $gap-24;
+          }
+
         display: flex;
         justify-content: space-between;
         gap: $gap-24;
 
         @include Pad(){
             flex-wrap: wrap;
-          }
-        @include Mobile(){
-            flex-direction: column;
-            align-items: center;
           }
     }
     .card{

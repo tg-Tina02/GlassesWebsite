@@ -1,0 +1,24 @@
+.QA{
+    padding: $Padding-80 0;
+    @include Mobile(){
+        padding: $Padding-40 0;
+    }
+
+    .QA-subtitle{
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 33px;
+        margin-bottom: $gap-24;
+    }
+    li:not(:last-child){
+        margin-bottom: 32px;
+        @include Mobile(){
+            margin-bottom: $gap-24;
+        }
+    }
+    .question{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: $gap-8;
+    }
+}

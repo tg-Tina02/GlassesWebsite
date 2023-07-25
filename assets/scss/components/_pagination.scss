@@ -1,0 +1,42 @@
+.pagination{
+    display: flex;
+    font-size: 18px;
+    color: #555555;
+    text-align: center;
+    width: fit-content;
+    
+    margin: $gap-24 auto 0;
+    @include Pad(){
+        margin-top: calc(80px - $gap-24);
+    }
+    @include Mobile(){
+        font-size: 16px;
+    }
+
+    // 邊框
+    border: 1px solid #555555;
+    li:not(:last-child){
+        border-right: 1px solid #555555;
+    }
+    // 上下頁按鈕
+    li:first-of-type,li:last-of-type{
+        a{
+            font-size: 19px;
+            padding: 10px 11px;
+            @include Mobile(){
+                font-size: 16px;
+            }
+        }
+    }
+    a{
+        display: block;
+        padding: 11px 15px;
+        &:hover{
+            background: #F2F2F2;
+        }
+        &.active{
+            background: #000;
+            color: #fff;
+        }
+    }
+}

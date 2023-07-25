@@ -3,32 +3,33 @@
     @include Mobile(){
         padding: $Padding-40 0;
       }
-    h2{
-        margin-bottom: $gap-48;
-        @include Mobile(){
-            margin-bottom: $gap-24;
-          }
-    }
+    
     ul{
+        margin-top: $gap-48;
+        @include Mobile(){
+            margin-top: $gap-24;
+          }
+
         display: flex;
         justify-content: space-between;
         gap: $gap-24;
-
-        li{
-            max-width: calc((100% - $gap-24*2)/3);
-        }
+        
         @include Pad(){
             flex-direction: column;
             align-items: center;
-            li{
+          }
+
+        li{
+            max-width: calc((100% - $gap-24*2)/3);
+            @include Pad(){
                 max-width: 336px;
             }
-          }
+        }
     }
     img{
         margin-bottom: $gap-8;
     }
-    h3{
+    .item-title{
         font-size: 48px;
         font-weight: 900;
         color: $Red-light;

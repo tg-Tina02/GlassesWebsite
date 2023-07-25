@@ -13,7 +13,7 @@
 
     <!-- Series-nav -->
     <nav class="Series-nav">
-      <ul class="container">
+      <ul class="container d-flex">
         <li class="active"><a href="Series-p1.html">OPTICAL</a></li>
         <li><a href="Series-p2.html">SUNGLASSES</a></li>
         <li><a href="javscript:;">FUNCTIONAL</a></li>
@@ -29,8 +29,8 @@
     <!-- product -->
     <div class="product">
       <div class="container">
-        <h2>Celluloid Combi</h2>
-        <h3>賽璐珞鈦金屬混合鏡框</h3>
+        <h2 class="title-sm">Celluloid Combi</h2>
+        <h3 class="title-sub">賽璐珞鈦金屬混合鏡框</h3>
         <ul class="product-list page1">
           <li>
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-1.png?raw=true" alt="產品1">
@@ -191,15 +191,7 @@
         </ul>
 
         <!-- 頁數 -->
-        <ul class="pagination">
-          <li><a href="">上一頁</a></li>
-          <li><a href="" class="active">1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">4</a></li>
-          <li><a href="">5</a></li>
-          <li><a href="">下一頁</a></li>
-        </ul>
+        <%- include('./layout/pagination'); -%>
 
       </div>
     </div>

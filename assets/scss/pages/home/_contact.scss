@@ -5,7 +5,7 @@
         padding: $Padding-40;
       }
 }
-.contact-list{
+.contact-form{
     max-width: 636px;
     margin: 0 auto;
 
@@ -15,19 +15,15 @@
     @include Mobile(){
         padding: 0 14px;
       }
-
-    h2{
-        margin-bottom: $gap-48;
+    & > p{
+        margin-top: $gap-48;
         @include Mobile(){
-            margin-bottom: $gap-24;
+            margin-top: $gap-24;
           }
-    }
-    p{
         font-size: 20px;
     }
     form{
         margin-top: $gap-24;
-        font-size: 16px;
     }
     span{
         display: block;
@@ -43,9 +39,6 @@
     }
     label{
         display: flex;
-        p{
-            font-size: 16px;
-        }
     }
     input[type=checkbox] {
         display: inline-block;
@@ -61,17 +54,16 @@
         background: $Red-light;
         color: #fff;
         border: none;
-        padding: 16px 176px;
+        padding: 16px 0px;
         margin: 0 auto;
+
+        width: 65%;
+        @include Mobile(){
+            width: 100%;
+          }
 
         &:hover{
             cursor: pointer;
         }
-
-        @include Mobile(){
-            width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-          }
     }
 }

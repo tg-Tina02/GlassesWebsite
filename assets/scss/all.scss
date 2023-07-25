@@ -1,11 +1,15 @@
+// base
+@import "./base/css-reset";
+@import "./base/variable";
+@import "./base/mixins";
+@import "./base/base";
 
-@import "./common/css-reset";
-@import "./common/variable";
-@import "./common/mixins";
-@import "./common/main";
-
+// layout
 @import "./layout/nav";
 @import "./layout/footer";
+
+// components
+@import "./components/pagination";
 
 // home
 @import "./pages/home/header";
@@ -22,3 +26,6 @@
 
 //Shop
 @import "./pages/Shop/shop";
+
+//QA
+@import "./pages/QA/QA";
