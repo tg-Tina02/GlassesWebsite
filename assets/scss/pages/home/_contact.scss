@@ -25,21 +25,6 @@
     form{
         margin-top: $gap-24;
     }
-    span{
-        display: block;
-        margin-bottom: $gap-8;
-    }
-    input:not(.checkbox),textarea{
-        display: inline-block;
-        width: 100%;
-        padding: 6px 12px;
-        margin-bottom: 16px;
-        background: none;
-        border: 1px solid #000;
-    }
-    label{
-        display: flex;
-    }
     input[type=checkbox] {
         display: inline-block;
         width: 20px;
@@ -48,7 +33,7 @@
         margin-bottom: $gap-48;
         cursor: pointer;
     }
-    button{
+    input[type="submit"]{
         display: block;
         text-align: center;
         background: $Red-light;
@@ -65,5 +50,17 @@
         &:hover{
             cursor: pointer;
         }
+    }
+    label{
+        display: block;
+        margin-bottom: 16px;
+    }
+    label > input,textarea{
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        background: none;
+        border: 1px solid #000;
+        margin-top: $gap-8;
     }
 }
