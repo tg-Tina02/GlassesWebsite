@@ -1,0 +1,101 @@
+.Blog{
+    padding: $Padding-80 0;
+    @include Mobile(){
+        padding: $Padding-40 0;
+    }
+}
+.Blog-list{
+    margin-top: 32px;
+    @include Pad(){
+        margin-top: 40px;
+    }
+    @include Mobile(){
+        margin-top: 24px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: $gap-24;
+    li{
+        display: flex;
+        gap: $gap-24;
+        @include Mobile(){
+            flex-wrap: wrap;
+            gap: $gap-8;
+        }
+    }
+    img{
+        max-width: 50%;
+        @include Mobile(){
+            max-width: 100%;
+        }
+    }
+    p{
+        text-align: justify;
+        font-size: 20px;
+        @include Pad(){
+            font-size: 16px;
+        }
+    }
+    .blog-title{
+        font-size: 32px;
+        color: $Red-dark;
+        @include Pad(){
+            font-size: 24px;
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include Pad(){
+            justify-content: flex-start;
+        }
+        @include Mobile(){
+            width: 100%;
+        }
+        & > p{
+            flex-grow: 1;
+            color: #555555;
+            position: relative;
+            margin-top: 16px;
+
+            @include Pad(){
+                margin-top: 16px;
+                flex-grow: 0;
+
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+    
+                // 限制文字只出現 3 行, 結尾出現省略號
+                -webkit-line-clamp: 6;
+            }
+            @include Mobile(){
+                display: none;
+            }
+        }
+    }
+    .date{
+        opacity: 0.7;
+    }
+    .btn{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        &::after{
+            content: 'MORE';
+            font-size: 36px;
+            font-weight: 900;
+            color: $Red-dark;
+        }
+        @include Pad(){
+            &::after{
+                content: '⋯⋯more';
+                font-size: inherit;
+                color: inherit;
+                font-weight: inherit;
+                background: #fff;
+            }
+        }
+    }
+}

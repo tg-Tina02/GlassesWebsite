@@ -1,0 +1,150 @@
+.Blog-p2{
+    .page-info{
+        padding-top: 24px;
+        padding-bottom: 8px;
+        @include Pad(){
+            padding-top: 8px;
+        }
+        @include Mobile(){
+            padding-top: 16px;
+        }
+        .tag-group{
+            font-size: 24px;
+            span{
+                margin-right: 15px;
+            }
+            @include Mobile(){
+                font-size: 16px;
+                span{
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        gap: $gap-24;
+    }
+    .material-symbols-outlined{
+        vertical-align: middle;
+    }
+    .content{
+        max-width: 66%;
+        @include Pad(){
+            max-width: 74%;
+        }
+        @include Mobile(){
+            max-width: 100%;
+        }
+    }
+    .p2-title{
+        font-size: 48px;
+        @include Mobile(){
+            font-size: 24px;
+        }
+    }
+    .p2-subTitle{
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        @include Pad(){
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+    }
+    img{
+        margin-bottom: $gap-8;
+        @include Pad(){
+            margin-bottom: 16px;
+        }
+        @include Mobile(){
+            margin-bottom: 8px;
+        }
+    }
+    p{
+        color: #555555;
+        margin-bottom: 40px;
+        @include Pad(){
+            &:not(:last-of-type){
+                margin-bottom: $gap-24;
+            }
+        }
+        @include Mobile(){
+            margin-bottom: 16px;
+            &:last-of-type{
+                margin-bottom: 64px;
+            }
+        }
+    }
+    .share{
+        gap: 16px;
+        color: #0A0A0A;
+        img{
+            width: 24px;
+        }
+        margin-bottom: 16px;
+        @include Mobile(){
+            display: none;
+        }
+    }
+}
+.Blog-p2-aside{
+    flex-grow: 1;
+    @include Mobile(){
+        display: none;
+    }
+    .tag-title{
+        font-size: 32px;
+        .material-symbols-outlined{
+            font-size: 38px;
+            margin-right: 12px;
+            margin-left: 4px;
+            font-variation-settings:
+                'wght' 600;
+        }
+        @include Pad(){
+            font-size: 16px;
+            .material-symbols-outlined{
+                font-size: 19px;
+                margin-right: 2px;
+                margin-left: 2px;
+            }
+        }
+    }
+    .tag-group{
+        font-size: 24px;
+        max-width: 295px;
+        display: flex;
+        flex-wrap: wrap;
+        span{
+            margin-right: 24px;
+            margin-bottom: 4px;
+        }
+        @include Pad(){
+            font-size: 16px;
+            max-width: 132px;
+            span{
+                margin-right: 16px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+
+.blog-footer{
+    padding: 24px 4px 80px 4px;
+    border-top: 1px solid #707070;
+    width: 66%;
+    @include Pad(){
+        width: 100%;
+    }
+    @include Mobile(){
+        display: none;
+    }
+    p{
+        display: inline-block;
+        margin: 0 12px;
+    }
+}
