@@ -1,7 +1,5 @@
 
 footer{
-    background: $Red-light;
-    color: #fff;
     padding-top: $gap-48;
     @include Mobile(){
         padding-top: $gap-24;
@@ -19,8 +17,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin-bottom: $gap-24;
 
     .link-group{
         display: flex;
@@ -51,17 +47,10 @@ footer{
     }
 }
 .footer-info{
-    font-size: 36px;
     font-family: 'Noto Sans TC';
     font-weight: 300;
-    margin-bottom: 32px;
     @include Mobile(){
-        font-size: 16px;
-        margin-bottom: $gap-24;
         order: -1;
-    }
-    li:not(:last-child){
-        margin-bottom: $gap-8;
     }
     .material-symbols-outlined {
         font-size: 40px;
@@ -88,9 +77,6 @@ footer{
         flex-direction: column;
         padding: 16px 0px 24px 0;
         width: 100%;
-    }
-    p{
-        font-family: 'Roboto', sans-serif;
     }
     ul{
         font-size: 14px;

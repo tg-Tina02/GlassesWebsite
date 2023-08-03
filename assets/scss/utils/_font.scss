@@ -1,0 +1,54 @@
+// 設定一個間距最大值的變數
+$max: 13;
+@for $i from 1 through $max {
+    .fs-#{$i} {
+      font-size: calc(1rem + ($i - 1) * 4px);
+    }
+  }
+@include Pad(){
+    @for $i from 1 through $max {
+        .fs-md-#{$i} {
+          font-size: calc(1rem + ($i - 1) * 4px);
+        }
+      }
+}
+@include Mobile(){
+    @for $i from 1 through $max {
+        .fs-sm-#{$i} {
+          font-size: calc(1rem + ($i - 1) * 4px);
+        }
+      }
+}
+.text-primary{
+    color: $primary;
+}
+.text-primary-dark{
+    color: $primary-dark;
+}
+.text-white{
+    color: #fff;
+}
+.text-black{
+    color: #000;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-900{
+    font-weight: 900;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-italic{
+    font-style: italic;
+}
+.font-Roboto{
+    font-family: 'Roboto', sans-serif;
+}

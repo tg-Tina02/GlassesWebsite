@@ -1,20 +1,10 @@
 .design{
-    padding: $Padding-80 0;
-    @include Mobile(){
-        padding: $Padding-40 0;
-      }
-
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     ul{
-        margin-top: $gap-48;
-        @include Mobile(){
-            margin-top: $gap-24;
-          }
-          
         display: flex;
         @include Pad(){
             flex-direction: column;
@@ -24,20 +14,15 @@
     li:hover{
       .item-title{
           transition: all 0.3s;
-          background: $Red-light;
+          background: $primary;
           color: #fff;
       }
     }
     .item-title{
-        font-size: 48px;
-        font-weight: 900;
-        color: $Red-light;
-        font-family: 'Roboto', sans-serif;
-        font-style: italic;
-        text-align: center;
-
         padding: 8px 0;
-        background-color: #fff;
         border-right: 1px solid #00000029;
+    }
+    img{
+      margin-bottom: -6px;
     }
 }

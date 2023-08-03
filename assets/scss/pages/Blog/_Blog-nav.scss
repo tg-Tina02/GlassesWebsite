@@ -1,7 +1,5 @@
 .Blog-nav{
-    font-size: 20px;
     padding: 13px 0;
-    background: $Red-dark;
 
     @include Mobile(){
         display: none;
@@ -11,7 +9,6 @@
         @include Mobile(){
             width: 100%;
             gap: 0;
-            font-size: 16px;
             justify-content: space-between;
         }
     }

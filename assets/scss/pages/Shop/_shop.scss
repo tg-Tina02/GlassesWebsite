@@ -1,24 +1,11 @@
 .Shop{
-    padding: $Padding-80 0;
-    @include Mobile(){
-        padding: $Padding-40 0;
-    }
     .section{
-        font-size: 24px;
-        display: flex;
-        align-items: center;
         width: calc((100% - $gap-24*2)/3);
-        margin-top: 33px;
-        margin-bottom: calc(40px - $gap-24);
-
         @include Pad(){
             width: 60%;
-            margin-bottom: 40px;
         }
         @include Mobile(){
-            font-size: 16px;
             width: 100%;
-            margin-bottom: $gap-24;
         }
 
         select{
@@ -42,12 +29,10 @@
         gap: $gap-24;
 
         .store{
-            // margin-top: calc(48px - $gap-24);
             width: calc((100% - $gap-24*2)/3);
             
             @include Pad(){
                 width: calc((100% - $gap-24)/2);
-                // margin-top: 0;
             }
             @include Mobile(){
                 width: 100%;
@@ -84,7 +69,6 @@
         display: flex;
         align-items: center;
         gap: $gap-24;
-        // margin-top: 40px;
 
         @include Pad(){
             flex-direction: column;

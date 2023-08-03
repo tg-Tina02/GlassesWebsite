@@ -3,44 +3,15 @@
     @include Mobile(){
         height: 396px;
       }
-
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    .container{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    p{
-        font-size: 36px;
-        color: $Red-dark;
-
-        @include Mobile(){
-            font-size: 16px;
-          }
-    }
-}
-.header-title{
-    color: $Red-dark;
-    font-size: 64px;
-    font-weight: 700;
-    @include Mobile(){
-        font-size: 24px;
-        margin-bottom: $gap-8;
-    }
-    margin-bottom: 4px;
 }
 .header-btn{
-    color: #fff;
-    font-size: 20px;
     padding: 6px 12px;
-    display: inline-block;
-    background: $Red-light;
+    width: fit-content;
+    margin-left: auto;
     &:hover{
         filter:grayscale(0.1);
     }

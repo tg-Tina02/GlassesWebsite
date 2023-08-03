@@ -1,16 +1,10 @@
 .product{
-    padding: $Padding-80 0;
-    @include Mobile(){
-        padding: $Padding-40 0;
-    }
     .product-list{
-        margin-top: 32px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: $gap-24;
         @include Mobile(){
-            margin-top:$gap-24;
             flex-direction: column;
         }
         li{
@@ -44,7 +38,6 @@
     .text{
         display: flex;
         justify-content: space-between;
-        font-size: 24px;
         .price{
             font-weight: 500;
             color: $Red-light;

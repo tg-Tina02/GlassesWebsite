@@ -1,11 +1,4 @@
 .contact{
-    padding: $Padding-80 0;
-    background: $Pink;
-    @include Mobile(){
-        padding: $Padding-40 14px;
-      }
-}
-.contact-form{
     max-width: 636px;
     margin: 0 auto;
 
@@ -15,17 +8,6 @@
     @include Mobile(){
         max-width: 100%;
       }
-    &>p:first-of-type{
-        font-size: 20px;
-        margin-top: $gap-48;
-        @include Mobile(){
-            font-size: 16px;
-            margin-top: $gap-24;
-          }
-    }
-    form{
-        margin-top: $gap-24;
-    }
     label{
         display: block;
         margin-bottom: 16px;
@@ -38,7 +20,7 @@
         border: 1px solid #000;
         margin-top: $gap-8;
         &:focus{
-            outline: 2px solid $Red-light;
+            outline: 2px solid $primary;
             background: #ffffff96;
         }
     }
@@ -65,13 +47,13 @@
                 height: 20px;
                 border: 3px solid black;
                 border-radius: 2px;
-                background: $Pink;
+                background: $primary-light;
                 top: 0;
                 left: 0;
             }
             // 勾選之後的效果
             &:checked::before{
-                background: $Red-light;
+                background: $primary;
             }
             &:checked::after{
                 content: "";
@@ -90,9 +72,6 @@
     // 確認送出的按鈕
     input[type="submit"]{
         display: block;
-        text-align: center;
-        background: $Red-light;
-        color: #fff;
         border: none;
         padding: 16px 0px;
         margin: 0 auto;
@@ -104,7 +83,7 @@
 
         &:hover{
             cursor: pointer;
-            background: $Red-dark;
+            background: $primary-dark;
         }
     }
     ::placeholder{

@@ -1,0 +1,34 @@
+$max: 12;
+@for $i from 0 through $max {
+        .mb-#{$i} {
+          margin-bottom: $i * 4px;
+        }
+      }
+ 
+@include Pad(){
+    @for $i from 0 through $max {
+        .mb-md-#{$i} {
+          margin-bottom: $i * 4px;
+        }
+      }
+}
+@include Mobile(){
+    @for $i from 0 through $max {
+        .mb-sm-#{$i} {
+          margin-bottom: $i * 4px;
+        }
+      }
+}
+
+
+// padding
+.py-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@include Mobile(){
+    .py-sm-40{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

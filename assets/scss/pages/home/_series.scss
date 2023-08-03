@@ -1,15 +1,5 @@
 .series{
-    padding: $Padding-80 0;
-    @include Mobile(){
-        padding: $Padding-40 0;
-      }
-    
     ul{
-        margin-top: $gap-48;
-        @include Mobile(){
-            margin-top: $gap-24;
-          }
-
         display: flex;
         justify-content: space-between;
         gap: $gap-24;
@@ -29,16 +19,5 @@
                 box-shadow: 0px 0px 10px gray;
             }
         }
-    }
-    img{
-        margin-bottom: $gap-8;
-    }
-    .item-title{
-        font-size: 48px;
-        font-weight: 900;
-        color: $Red-light;
-        font-family: 'Roboto', sans-serif;
-        font-style: italic;
-        text-align: center;
     }
 }

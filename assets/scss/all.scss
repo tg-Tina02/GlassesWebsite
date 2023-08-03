@@ -4,6 +4,13 @@
 @import "./base/mixins";
 @import "./base/base";
 
+// utils
+@import "./utils/background";
+@import "./utils/font";
+@import "./utils/spacing";
+@import "./utils/sizing";
+@import "./utils/flex";
+
 // layout
 @import "./layout/nav";
 @import "./layout/footer";
@@ -28,7 +35,7 @@
 @import "./pages/Shop/shop";
 
 //QA
-@import "./pages/QA/QA";
+// @import "./pages/QA/QA";
 
 //Blog
 @import "./pages/Blog/Blog";

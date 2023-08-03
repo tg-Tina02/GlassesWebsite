@@ -1,28 +1,10 @@
-.intro{
-    background-color: $Pink;
-    padding: $Padding-80 0;
-    @include Mobile(){
-        padding: $Padding-40 0;
-      }
-}
 .intro-list{
-    margin-top: 32px;
-
     display: flex;
     justify-content: space-between;
     gap: $gap-24;
     
     @include Pad(){
         flex-wrap: wrap;
-    }
-
-    .item-title{
-        font-size: 24px;
-        font-weight: 700;
-        color: $Red-dark;
-        text-align: center;
-        margin-top: $gap-24;
-        margin-bottom: $gap-8;
     }
     li{
         width: calc((100% - $gap-24*3)/4);
@@ -34,8 +16,6 @@
           }
     }
     img{
-        display: block;
         width: 83.33px;
-        margin: auto;
     }
 }

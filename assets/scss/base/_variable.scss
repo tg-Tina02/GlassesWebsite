@@ -12,7 +12,19 @@ $gap-48:48px;
 
 
 
-// bs
-// $modal-content-box-shadow-xs:       red;
-// $modal-content-box-shadow-sm-up:    blue;
-// $pagination-focus-bg:               $Black-100;
+// 文字大小設定
+$font-size-base: 1rem; // 16px
+
+$font-size-sm: $font-size-base * 0.875; // 14px
+
+$h1-font-size: $font-size-base * 4; // 64px
+$h2-font-size: $font-size-base * 3; // 48px
+$h3-font-size: $font-size-base * 1.75; // 28px
+$h4-font-size: $font-size-base * 1.5; // 24px
+$h5-font-size: $font-size-base * 1.25; // 20px
+$h6-font-size: $font-size-base; // 16px
+
+// 色彩設定
+$primary: #aa0601;
+$primary-light: #fbf2f2;
+$primary-dark: #650300;

@@ -1,8 +1,4 @@
 .Blog{
-    padding: $Padding-80 0;
-    @include Mobile(){
-        padding: $Padding-40 0;
-    }
     .container{
         margin-bottom: 124px;
         @include Pad(){
@@ -14,13 +10,6 @@
     }
 }
 .Blog-list{
-    margin-top: 32px;
-    @include Pad(){
-        margin-top: 40px;
-    }
-    @include Mobile(){
-        margin-top: 24px;
-    }
     display: flex;
     flex-direction: column;
     gap: $gap-24;
@@ -45,13 +34,6 @@
             font-size: 16px;
         }
     }
-    .blog-title{
-        font-size: 32px;
-        color: $Red-dark;
-        @include Pad(){
-            font-size: 24px;
-        }
-    }
     .text{
         display: flex;
         flex-direction: column;
@@ -66,7 +48,6 @@
             flex-grow: 1;
             color: #555555;
             position: relative;
-            margin-top: 16px;
 
             @include Pad(){
                 margin-top: 16px;
