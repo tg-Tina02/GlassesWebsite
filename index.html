@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GlassesWebsite</title>
   <link rel="shortcut icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeElEQVRYhe3WQWhdVRAG4M8QpIiEECSEEEIIQURfRbAEFypZBAmxuBCRIF2IuHBRpEgp2UoX0oWL4EJERERKkS7SVlxJqiLBRQghWImQRcAgLWixEEooIT4XM89cnve+3JCl74cLlznnn5kzd+Y/ly66+L/joRLbOF7FSfTiN3yL7/F3DZ+TeBkTuX8DN3DrMGIfPsM+miXPKp7pwB/HdxXcJhYxWEXuzwBNrGAOo0l4EZ9nYvcxVcJv4I9CoJcwhGG8gqVc28JIWQJXc8NHouxlmMFuBiqe5BFsZoJvVp0Q8xljGT3FhedyYal9oQTv5N4PC7ZzafvgEC58mXtfKxoX0jhVw0EvtnG7YFsRn6a/Bn9CVGqxaPxRlLaq9O24LBJewCU8SB91sYW7yb0Ea+K71sXH/tvhXx+Bv1bk9uAOBtQrIYyJ+X4Bz+KeGME66BHT9SuutYwXMpu3azgYFJ9rtWBbTH6jBn/GwbQtYY+Y1x3RWEOHOLiSDt4q2KbT9gMe7sB9FL9k0FOicf89yNl0slFxkj4hRk2hdu3j2hqvb5Sr3Rh+cjCub+T7+8VNF8WI7Immmse7+MSByi2LfmnHCVzPPTuZ0Hs4L0RuN9c+FVVazzij7Y6mM0h7l/+eCU2WBG+hR/TRZgl/XVxwMqmmmKZKDAs9P42n03nrJM93IiYex6xourGCfUacfFt5JTtiKhPYycSOitcL/E6V7IjZdLAveqPyei1gBF+Isv8lbtdjoeFAzXaFNM/hCSFmA3gSZ/CVkOqmmIKJ4wZvoVdowc+qf0Baz5oYu9KbtuyX7KhoiP54Co8Jmf5TiM5NIbtddNFFJf4Byhy7rMsov78AAAAASUVORK5CYII=" />
-  <script type="module" crossorigin src="/GlassesWebsite/assets/main-104ddf15.js"></script>
-  <link rel="stylesheet" href="/GlassesWebsite/assets/main-bbdfaff8.css">
+  <script type="module" crossorigin src="/GlassesWebsite/assets/main-17977d00.js"></script>
+  <link rel="stylesheet" href="/GlassesWebsite/assets/main-ac4a4594.css">
 </head>
 
 <body>
@@ -153,7 +153,7 @@
               <p>
                 眼鏡品質優良，下次還會想來這邊購買！
               </p>
-              <div class="date">2021/06/20</div>
+              <time class="date">2021/06/20</time>
             </div>
           </li>
           <li class="card">
@@ -165,7 +165,7 @@
               <p>
                 做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
               </p>
-              <div class="date">2021/04/18</div>
+              <time class="date">2021/04/18</time>
             </div>
           </li>
           <li class="card">
@@ -177,7 +177,7 @@
               <p>
                 謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
               </p>
-              <div class="date">2020/12/25</div>
+              <time class="date">2020/12/25</time>
             </div>
           </li>
           <li class="card">
@@ -213,13 +213,15 @@
           <label for="email">
             電子郵件 <input id="email" type="email" placeholder="xxx@gmail.com" title="請輸入電子信箱">
           </label>
-          <label for="" class="textarea">
-            意見反應 <textarea name="textarea" placeholder="請輸入您的意見" rows="8"></textarea>
+          <label for="textarea" class="textarea">
+            意見反應 <textarea name="textarea" placeholder="請輸入您的意見" rows="8" id="textarea"></textarea>
           </label>
-          <p>
-            <input type="checkbox" class="checkbox">
-            我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-          </p>
+          <label for="checkbox">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <p>
+              我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+            </p>
+          </label>
           <input name="submit" type="submit" value="確認送出">
         </form>
       </div>
