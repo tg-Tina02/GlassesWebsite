@@ -21,6 +21,13 @@
             gap: $gap-24;
           }
     }
+    li:hover{
+      .item-title{
+          transition: all 0.3s;
+          background: $Red-light;
+          color: #fff;
+      }
+    }
     .item-title{
         font-size: 48px;
         font-weight: 900;

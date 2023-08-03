@@ -2,7 +2,7 @@
     padding: $Padding-80 0;
     background: $Pink;
     @include Mobile(){
-        padding: $Padding-40;
+        padding: $Padding-40 14px;
       }
 }
 .contact-form{
@@ -10,29 +10,84 @@
     margin: 0 auto;
 
     @include Pad(){
-        max-width: 576px;
+        max-width: 75%;
       }
     @include Mobile(){
-        padding: 0 14px;
+        max-width: 100%;
       }
-    & > p{
+    &>p:first-of-type{
+        font-size: 20px;
         margin-top: $gap-48;
         @include Mobile(){
+            font-size: 16px;
             margin-top: $gap-24;
           }
-        font-size: 20px;
     }
     form{
         margin-top: $gap-24;
     }
-    input[type=checkbox] {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-right: 6px;
-        margin-bottom: $gap-48;
-        cursor: pointer;
+    label{
+        display: block;
+        margin-bottom: 16px;
     }
+    textarea,input:not([type="checkbox"],[type="submit"]){
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        background: none;
+        border: 1px solid #000;
+        margin-top: $gap-8;
+        &:focus{
+            outline: 2px solid $Red-light;
+            background: #ffffff96;
+        }
+    }
+
+    textarea {resize: none;}
+
+    label[for="checkbox"]{
+        display: flex;
+        margin-bottom: 48px;
+        @include Pad(){
+            margin-bottom: 24px;
+        }
+        input{
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-right: 16px;
+            cursor: pointer;
+            // 覆蓋原本的框框
+            &::before{
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border: 3px solid black;
+                border-radius: 2px;
+                background: $Pink;
+                top: 0;
+                left: 0;
+            }
+            // 勾選之後的效果
+            &:checked::before{
+                background: $Red-light;
+            }
+            &:checked::after{
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 1px;
+                width: 17px;
+                height: 10px;
+                border-bottom: 3px solid #fff;
+                border-left: 3px solid #fff;
+                transform: rotate(-50deg);
+            }
+        }
+    }
+    
+    // 確認送出的按鈕
     input[type="submit"]{
         display: block;
         text-align: center;
@@ -49,18 +104,11 @@
 
         &:hover{
             cursor: pointer;
+            background: $Red-dark;
         }
     }
-    label{
-        display: block;
-        margin-bottom: 16px;
-    }
-    label > input,textarea{
-        display: block;
-        width: 100%;
-        padding: 6px 12px;
-        background: none;
-        border: 1px solid #000;
-        margin-top: $gap-8;
+    ::placeholder{
+        color: #000;
+        opacity: 0.2;
     }
 }

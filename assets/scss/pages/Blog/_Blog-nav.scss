@@ -2,6 +2,10 @@
     font-size: 20px;
     padding: 13px 0;
     background: $Red-dark;
+
+    @include Mobile(){
+        display: none;
+    }
     ul{
         gap: $gap-48;
         @include Mobile(){

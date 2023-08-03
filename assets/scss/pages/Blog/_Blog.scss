@@ -3,6 +3,15 @@
     @include Mobile(){
         padding: $Padding-40 0;
     }
+    .container{
+        margin-bottom: 124px;
+        @include Pad(){
+            margin-bottom: 80px;
+        }
+        @include Mobile(){
+            margin-bottom: 40px;
+        }
+    }
 }
 .Blog-list{
     margin-top: 32px;
