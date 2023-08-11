@@ -1,4 +1,7 @@
 .Shop{
+    img{
+        display: block;
+    }
     .section{
         width: calc((100% - $gap-24*2)/3);
         @include Pad(){
@@ -41,6 +44,7 @@
     }
     .text{
         color: #212529;
+        flex-grow: 1;
     }
     .shop-name{
         font-size: 24px;
@@ -48,6 +52,7 @@
         border: 1px solid #00000020;
     }
     .info{
+        height: 100%;
         font-size: 20px;
         padding: 16px 24px;
         border: 1px solid #00000020;
@@ -55,6 +60,10 @@
         display: flex;
         flex-direction: column;
         gap: $gap-8;
+
+        & li:first-of-type{
+            background: transparent;
+        }
     }
     a{
         display: block;
