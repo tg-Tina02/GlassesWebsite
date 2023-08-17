@@ -56,6 +56,9 @@
         font-size: 20px;
         padding: 16px 24px;
         border: 1px solid #00000020;
+        @include Pad(){
+            height: auto;
+        }
 
         display: flex;
         flex-direction: column;
@@ -84,6 +87,9 @@
         }
         @include Mobile(){
             margin-top: $gap-24;
+        }
+        img{
+            object-fit: cover
         }
 
         .store{
