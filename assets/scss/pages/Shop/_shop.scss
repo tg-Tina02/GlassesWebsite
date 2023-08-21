@@ -33,6 +33,8 @@
 
         .store{
             width: calc((100% - $gap-24*2)/3);
+            display: flex;
+            flex-direction: column;
             
             @include Pad(){
                 width: calc((100% - $gap-24)/2);

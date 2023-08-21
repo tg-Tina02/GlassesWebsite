@@ -1,4 +1,8 @@
 .navRed{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
     padding: 16px 0;
     @include Mobile(){
         padding: 0;
@@ -6,6 +10,7 @@
     .container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         @include Mobile(){
             flex-wrap: wrap;
@@ -53,5 +58,27 @@
         a{
             padding: 12px 0;
         }
+      }
+}
+.ham-icon{
+    display: none;
+    cursor: pointer;
+    padding-right: 25px;
+    @include Mobile(){
+        display: block;
+    }
+}
+@include Mobile(){
+    .dropdown {
+        position: absolute;
+        background: #aa0601;
+        top: 100%;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 1s;
+      }
+      .dropdown.active {
+        max-height: 200px;
       }
 }

@@ -1,12 +1,18 @@
 .index-header{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    /* 開始設定背景樣式 */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     height: 787px;
+    // min-height: 787px;
     @include Mobile(){
         height: 396px;
+        // min-height: 396px;
+        background-attachment:initial;
       }
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .header-btn{
     padding: 6px 12px;
